@@ -8,3 +8,83 @@ html {
 	box-sizing: inherit;
 }
 
+ul {
+	list-style: none;
+}
+
+@font-face {
+	font-family: "TTLakes-Light";
+	font-weight: 300;
+	font-style: normal;
+	src: url("../fonts/TTLakes-Light.woff2") format("woff2"), url("../fonts/TTLakes-Light.woff") format("woff");
+  }
+  @font-face {
+	font-family: "TTLakes-Medium";
+	font-weight: 500;
+	font-style: normal;
+	src: url("../fonts/TTLakes-Medium.woff2") format("woff2"), url("../fonts/TTLakes-Medium.woff") format("woff");
+  }
+  @font-face {
+	font-family: "TTLakes-DemiBold";
+	font-weight: 700;
+	font-style: normal;
+	src: url("../fonts/TTLakes-DemiBold.woff2") format("woff2"), url("../fonts/TTLakes-DemiBold.woff") format("woff");
+  }
+
+body {
+	background-color: #F8F8F8;
+	min-width: 320px;
+    overflow-x: hidden;
+    font-family: "TTLakes-Light", "Arial", "sans-serif";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+	color: #1B1C21;
+}
+
+button {
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	margin: 0;
+ 
+	background-color: transparent;
+}
+
+.container {
+	padding: 0 16px;
+	margin: 0 auto;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; /*Выравнивание относительно друг-друга*/
+	height: 88px;
+}
+
+.list {
+	display: flex;
+}
+
+.list__item + .list__item{
+	margin-left: 16px;
+}
+
+
+.list__decor {
+	margin-right: 20px;
+	padding-top: 8px;
+}
+
+@media (min-width: 320px)  {
+	.list__item--dis {
+		display: none;
+	}
+}
+
+
